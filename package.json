@@ -1,0 +1,25 @@
+{
+  "name": "thegym-bem-challenge3-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacob-js/thegym-bem-challenge3-sass.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jacob-js/thegym-bem-challenge3-sass/issues"
+  },
+  "homepage": "https://github.com/jacob-js/thegym-bem-challenge3-sass#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.12",
+    "postcss": "^8.4.17",
+    "tailwindcss": "^3.1.8"
+  }
+}
