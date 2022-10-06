@@ -22,7 +22,7 @@
         @apply font-bold text-[56px] leading-[110%]
     }
     .c-subtitle{
-        @apply text-lg opacity-90
+        @apply text-base opacity-90
     }
     .s-hero__gradient{
         position: absolute;
@@ -31,5 +31,23 @@
     }
     .c-input{
         @apply bg-white border-none outline-none
+    }
+    .c-gradient-title{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+        text-align: center;
+        background: linear-gradient(53.94deg, #373FFF 15.02%, #3ACAF8 82.83%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    .features__item{
+        @apply space-y-6
+    }
+    .features__name{
+        @apply text-[32px]
     }
 }
