@@ -19,7 +19,7 @@
         @apply bg-primary text-white rounded-xl
     }
     .c-title{
-        @apply font-bold text-[56px] leading-[110%]
+        @apply font-bold text-[48px] leading-[120%]
     }
     .c-subtitle{
         @apply text-base opacity-90
@@ -38,7 +38,6 @@
         font-weight: 700;
         font-size: 24px;
         line-height: 120%;
-        text-align: center;
         background: linear-gradient(53.94deg, #373FFF 15.02%, #3ACAF8 82.83%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -49,5 +48,12 @@
     }
     .features__name{
         @apply text-[32px]
+    }
+    .b-us__title{
+        width: 325px;
+        height: 29px;
+    }
+    .b-us__list-item{
+        @apply text-[20px] font-medium leading-[150%]
     }
 }
