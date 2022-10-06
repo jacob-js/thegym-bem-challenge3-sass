@@ -4,11 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    font-family: 'Roboto', sans-serif;
-}
-
 @layer components{
+    body{
+        @apply text-primary;
+        font-family: 'Roboto', sans-serif;
+    }
     .nav__menu{
         @apply text-gray-800 cursor-pointer text-base font-normal
     }
@@ -17,5 +17,19 @@ body{
     }
     .btn--primary{
         @apply bg-primary text-white rounded-xl
+    }
+    .c-title{
+        @apply font-bold text-[56px] leading-[110%]
+    }
+    .c-subtitle{
+        @apply text-lg opacity-90
+    }
+    .s-hero__gradient{
+        position: absolute;
+        top: -80px;
+        z-index: -1;
+    }
+    .c-input{
+        @apply bg-white border-none outline-none
     }
 }
