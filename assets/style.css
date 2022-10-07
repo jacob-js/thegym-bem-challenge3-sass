@@ -600,6 +600,13 @@ body{
   line-height: 150%;
 }
 
+.features__item--box{
+  border-left-width: 2px;
+  --tw-border-opacity: 1;
+  border-left-color: rgb(209 213 219 / var(--tw-border-opacity));
+  padding-left: 1.5rem;
+}
+
 .relative{
   position: relative;
 }
@@ -637,17 +644,13 @@ body{
   width: 576px;
 }
 
+.w-\[45\%\]{
+  width: 45%;
+}
+
 .w-max{
   width: -moz-max-content;
   width: max-content;
-}
-
-.w-2\/5{
-  width: 40%;
-}
-
-.w-\[45\%\]{
-  width: 45%;
 }
 
 .max-w-3xl{
@@ -660,10 +663,6 @@ body{
 
 .max-w-xl{
   max-width: 36rem;
-}
-
-.max-w-md{
-  max-width: 28rem;
 }
 
 .max-w-\[156px\]{
@@ -714,6 +713,10 @@ body{
   gap: 1rem;
 }
 
+.gap-9{
+  gap: 2.25rem;
+}
+
 .gap-6{
   gap: 1.5rem;
 }
@@ -722,32 +725,10 @@ body{
   gap: 0.5rem;
 }
 
-.gap-9{
-  gap: 2.25rem;
-}
-
 .space-y-6 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
-}
-
-.space-y-8 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
-}
-
-.space-y-4 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
-}
-
-.space-y-2 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
 .rounded-2xl{
@@ -767,8 +748,8 @@ body{
   background-color: rgba(224,228,252,0.5);
 }
 
-.bg-\[url\(\'\.\/assets\/img\/stats\.png\'\)\]{
-  background-image: url('./assets/img/stats.png');
+.bg-\[rgba\(215\2c 152\2c 225\2c 0\.15\)\]{
+  background-color: rgba(215,152,225,0.15);
 }
 
 .p-2{
@@ -801,11 +782,6 @@ body{
 .px-5{
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-}
-
-.py-10{
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
 }
 
 .text-center{

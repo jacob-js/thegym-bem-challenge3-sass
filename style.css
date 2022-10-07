@@ -60,4 +60,7 @@
     .b-us__list-item{
         @apply text-[20px] font-medium leading-[150%]
     }
+    .features__item--box{
+        @apply pl-6 border-l-2 border-l-gray-300
+    }
 }
