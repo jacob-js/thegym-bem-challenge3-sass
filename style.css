@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.s-stats{
+    background-image: url('./img/stats-bg.png');
+}
+
 @layer components{
     body{
         @apply text-primary;
