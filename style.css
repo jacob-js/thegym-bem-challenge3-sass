@@ -63,4 +63,16 @@
     .features__item--box{
         @apply pl-6 border-l-2 border-l-gray-300
     }
+    .clients__card{
+        @apply border-2 flex flex-col items-center p-16 rounded-3xl
+    }
+    .clients__msg{
+        @apply text-center font-semibold mb-3
+    }
+    .clients__name{
+        @apply font-medium text-xl mt-3
+    }
+    .clients__job{
+        @apply text-xs
+    }
 }

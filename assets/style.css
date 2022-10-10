@@ -607,6 +607,33 @@ body{
   padding-left: 1.5rem;
 }
 
+.clients__card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1.5rem;
+  border-width: 2px;
+  padding: 4rem;
+}
+
+.clients__msg{
+  margin-bottom: 0.75rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.clients__name{
+  margin-top: 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+}
+
+.clients__job{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .relative{
   position: relative;
 }
@@ -630,6 +657,14 @@ body{
 
 .mt-10{
   margin-top: 2.5rem;
+}
+
+.mt-6{
+  margin-top: 1.5rem;
+}
+
+.mt-12{
+  margin-top: 3rem;
 }
 
 .flex{
@@ -671,6 +706,10 @@ body{
 
 .max-w-\[45\%\]{
   max-width: 45%;
+}
+
+.max-w-2xl{
+  max-width: 42rem;
 }
 
 .flex-1{
