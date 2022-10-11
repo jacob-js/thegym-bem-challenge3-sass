@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THEGYM | BEM Part 3</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <nav class="nav flex justify-between items-center px-20 py-5">
+        <img src="./assets/img/logo.svg" alt="" class="nav__logo">
+        <div class="flex gap-8 items-center">
+            <a href="/" class="nav__menu">Home</a>
+            <a class="nav__menu" href="./product.html">Product</a>
+            <div class="nav__menu">Pricing</div>
+            <div class="nav__menu">About Us</div>
+            <div class="nav__menu">Blog</div>
+            <div class="nav__menu">Contact</div>
+            <button class="btn btn--primary">Free trial</button>
+        </div>
+    </nav>
+
+    <section class="s-hero flex flex-col items-center py-20 gap-8 relative">
+        <div class="s-hero__contents relative z-10 flex flex-col items-center gap-10">
+            <div class="c-title text-[56px] leading-[110%] max-w-[529px] text-center">Pricing plans that suit you</div>
+            <div class="c-subtitle max-w-sm text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+            <div class="flex mx-auto bg-gray-200 p-2 rounded-2xl">
+                <button class="btn btn--primary">Monthly</button>
+                <button class="btn btn--light">Yearly</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="pricing">
+        <img src="./assets/img/pricing/gradient1.svg" alt="" class="pricing__left-gradient">
+        <img src="./assets/img/pricing/grad2.svg" alt="" class="pricing__right-gradient">
+        <div class="pricing__box">
+            <div class="pricing__header">
+                <img src="./assets/icons/pricing/pricing-plan.svg" alt="" class="pricing__icon">
+                <div class="pricing__headline">
+                    <div class="pricing__title">Regular</div>
+                    <div class="pricing__plan-type">Starter Plan</div>
+                </div>
+            </div>
+            <div class="pricing__body">
+                <div class="pricing__features">
+                    <div class="pricing__feature">
+                        <img src="./assets/icons/pricing/checked.svg" alt="" class="pricing__checked-icon">
+                        <div class="pricing__feature-name">Limited Projects</div>
+                    </div>
+                    <div class="pricing__feature">
+                        <img src="./assets/icons/pricing/checked.svg" alt="" class="pricing__checked-icon">
+                        <div class="pricing__feature-name">Regular Support Business</div>
+                    </div>
+                    <div class="pricing__feature">
+                        <img src="./assets/icons/pricing/checked.svg" alt="" class="pricing__checked-icon">
+                        <div class="pricing__feature-name">1 month Free Trial</div>
+                    </div>
+                    <div class="pricing__feature">
+                        <img src="./assets/icons/pricing/checked.svg" alt="" class="pricing__checked-icon">
+                        <div class="pricing__feature-name">3GB storage</div>
+                    </div>
+                    <div class="pricing__feature">
+                        <img src="./assets/icons/pricing/checked.svg" alt="" class="pricing__checked-icon">
+                        <div class="pricing__feature-name">Ads Preview</div>
+                    </div>
+                </div>
+
+                <div class="pricing__description mt-8">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</div>
+                <div class="pricing__payment">
+                    <div class="pricing__title">Free</div>
+                    <div class="pricing__payment-description">For Limited Period</div>
+                </div>
+                <div class="pricing__btn-container">
+                    <button class="btn btn--primary">Get Started</button>
+                </div>
+            </div>
+        </div>
+        <div class="pricing__box">
+            <div class="pricing__header">
+                <img src="./assets/icons/pricing/pricing-plan.svg" alt="" class="pricing__icon">
+                <div class="pricing__headline">
+                    <div class="pricing__title">Plantinum</div>
+                    <div class="pricing__plan-type">For the best results</div>
+                </div>
+            </div>
+            <div class="pricing__body">
+                <div class="pricing__features">
+                    <div class="pricing__feature">
+                        <img src="./assets/icons/pricing/checked.svg" alt="" class="pricing__checked-icon">
+                        <div class="pricing__feature-name">Limited Projects</div>
+                    </div>
+                    <div class="pricing__feature">
+                        <img src="./assets/icons/pricing/checked.svg" alt="" class="pricing__checked-icon">
+                        <div class="pricing__feature-name">Regular Support Business</div>
+                    </div>
+                    <div class="pricing__feature">
+                        <img src="./assets/icons/pricing/checked.svg" alt="" class="pricing__checked-icon">
+                        <div class="pricing__feature-name">1 month Free Trial</div>
+                    </div>
+                    <div class="pricing__feature">
+                        <img src="./assets/icons/pricing/checked.svg" alt="" class="pricing__checked-icon">
+                        <div class="pricing__feature-name">3GB storage</div>
+                    </div>
+                    <div class="pricing__feature">
+                        <img src="./assets/icons/pricing/checked.svg" alt="" class="pricing__checked-icon">
+                        <div class="pricing__feature-name">Ads Preview</div>
+                    </div>
+                </div>
+
+                <div class="pricing__description mt-8">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</div>
+                <div class="pricing__payment">
+                    <div class="pricing__title">$342</div>
+                    <div class="pricing__payment-description">For Limited Period</div>
+                </div>
+                <div class="pricing__btn-container">
+                    <button class="btn btn--primary">Get Started</button>
+                </div>
+            </div>
+        </div>
+        <div class="pricing__box">
+            <div class="pricing__header">
+                <img src="./assets/icons/pricing/pricing-plan.svg" alt="" class="pricing__icon">
+                <div class="pricing__headline">
+                    <div class="pricing__title">Standard</div>
+                    <div class="pricing__plan-type">Most popular</div>
+                </div>
+            </div>
+            <div class="pricing__body">
+                <div class="pricing__features">
+                    <div class="pricing__feature">
+                        <img src="./assets/icons/pricing/checked.svg" alt="" class="pricing__checked-icon">
+                        <div class="pricing__feature-name">Limited Projects</div>
+                    </div>
+                    <div class="pricing__feature">
+                        <img src="./assets/icons/pricing/checked.svg" alt="" class="pricing__checked-icon">
+                        <div class="pricing__feature-name">Regular Support Business</div>
+                    </div>
+                    <div class="pricing__feature">
+                        <img src="./assets/icons/pricing/checked.svg" alt="" class="pricing__checked-icon">
+                        <div class="pricing__feature-name">1 month Free Trial</div>
+                    </div>
+                    <div class="pricing__feature">
+                        <img src="./assets/icons/pricing/checked.svg" alt="" class="pricing__checked-icon">
+                        <div class="pricing__feature-name">3GB storage</div>
+                    </div>
+                    <div class="pricing__feature">
+                        <img src="./assets/icons/pricing/checked.svg" alt="" class="pricing__checked-icon">
+                        <div class="pricing__feature-name">Ads Preview</div>
+                    </div>
+                </div>
+
+                <div class="pricing__description mt-8">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</div>
+                <div class="pricing__payment">
+                    <div class="pricing__title">$243</div>
+                    <div class="pricing__payment-description">Billing Monthly</div>
+                </div>
+                <div class="pricing__btn-container">
+                    <button class="btn btn--primary">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="p-20 relative overflow-hidden h-[500px]">
+        <div class="flex flex-col items-center gap-6 relative z-10">
+            <h2 class="c-title max-w-2xl text-center">Are you ready to grow your business with us?</h2>
+            <div class="c-subtitle">Lorem ipsum dolor sit amet, consetetur ￼
+                Subscribe to our Nesadipscing elitr, sed diam nonumy.</div>
+            <button class="btn btn--primary">View Pricing</button>
+        </div>
+        <img src="./assets/img/footer-blur-bg.png" alt="" class="absolute w-full left-0 top-6 z-0">
+    </div>
+
+    <footer class="footer bg-primary p-20">
+        <div class="grid grid-cols-5 gap-10">
+            <div class="flex flex-col gap-2">
+                <div class="font-semibold text-white text-lg">Company</div>
+                <div class="text-gray-400 cursor-pointer">About Us</div>
+                <div class="text-gray-400 cursor-pointer">Why Choose Us</div>
+                <div class="text-gray-400 cursor-pointer">Pricing</div>
+                <div class="text-gray-400 cursor-pointer">Testimonial</div>
+            </div>
+            <div class="flex flex-col gap-2">
+                <div class="font-semibold text-white text-lg">Resources</div>
+                <div class="text-gray-400 cursor-pointer">Privacy Policy</div>
+                <div class="text-gray-400 cursor-pointer">Terms and Condition</div>
+                <div class="text-gray-400 cursor-pointer">Blog</div>
+                <div class="text-gray-400 cursor-pointer">Contact Us</div>
+            </div>
+            <div class="flex flex-col gap-2">
+                <div class="font-semibold text-white text-lg">Products</div>
+                <div class="text-gray-400 cursor-pointer">Project Management</div>
+                <div class="text-gray-400 cursor-pointer">Time Tracker</div>
+                <div class="text-gray-400 cursor-pointer">Time Schedule</div>
+                <div class="text-gray-400 cursor-pointer">Lead Generate</div>
+                <div class="text-gray-400 cursor-pointer">Remote Collaboration</div>
+            </div>
+
+            <div class="flex flex-col gap-4 col-span-2 items-start">
+                <img src="./assets/img/logo-white.svg" alt="" class="h-8">
+                <div class="text-white font-semibold mt-6 text-lg">Subscribe to our Newsletter</div>
+                <div class="flex justify-between overflow-hidden bg-gray-700 rounded-lg">
+                    <input type="email" class="c-input text-white bg-transparent flex-1 px-5" placeholder="Enter Your Email">
+                    <button class="btn btn--reverse">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center gap-8 mt-12">
+            <div class="flex-1 h-[1px] bg-gray-400"></div>
+            <div class="text-gray-400 text-xs">© Copyright Finsweet 2022</div>
+            <i class="bi bi-facebook text-gray-400 text-xl"></i>
+            <i class="bi bi-twitter text-gray-400 text-xl"></i>
+            <i class="bi bi-instagram text-gray-400 text-xl"></i>
+            <i class="bi bi-linkedin text-gray-400 text-xl"></i>
+            <div class="flex-1 h-[1px] bg-gray-400 text-xl"></div>
+        </div>
+    </footer>
+</body>
+</html>

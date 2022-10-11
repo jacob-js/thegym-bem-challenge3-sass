@@ -10,7 +10,7 @@
 
 @layer components{
     body{
-        @apply text-primary;
+        @apply text-primary overflow-x-hidden;
         font-family: 'Roboto', sans-serif;
     }
     .nav__menu{
@@ -93,5 +93,48 @@
         z-index: -1;
         background: radial-gradient(483.9% 2719.65% at -49.5% -250%, #D798E1 17.55%, #9BFFA5 27.56%, #AED3FF 49.89%, #C9D4EF 56.53%, #CACFFA 65.69%);
         filter: blur(350px);
+    }
+
+    .pricing{
+        @apply grid grid-cols-3 gap-8 px-20 relative
+    }
+    .pricing__left-gradient{
+        @apply absolute left-0 -top-[500px] scale-x-150 -z-10
+    }
+    .pricing__right-gradient{
+        @apply absolute right-0 -top-[500px] scale-x-150 -z-10
+    }
+    .pricing__box{
+        @apply bg-white rounded-3xl
+    }
+    .pricing__header{
+        @apply flex gap-6 items-center p-12 border-b pb-8
+    }
+    .pricing__title{
+        @apply text-3xl font-bold
+    }
+    .pricing__plan-type{
+        @apply opacity-60
+    }
+    .pricing__body{
+        @apply p-12
+    }
+    .pricing__features{
+        @apply flex flex-col gap-6
+    }
+    .pricing__feature{
+        @apply flex gap-4
+    }
+    .pricing__description{
+        @apply text-sm opacity-90 text-center
+    }
+    .pricing__payment{
+        @apply text-center mt-8
+    }
+    .pricing__payment-description{
+        @apply text-xs opacity-60
+    }
+    .pricing__btn-container{
+        @apply flex justify-center mt-6
     }
 }
