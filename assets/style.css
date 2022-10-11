@@ -702,46 +702,6 @@ body{
   top: 0px;
 }
 
-.top-28{
-  top: 7rem;
-}
-
-.bottom-48{
-  bottom: 12rem;
-}
-
-.bottom-10{
-  bottom: 2.5rem;
-}
-
-.bottom-0{
-  bottom: 0px;
-}
-
-.bottom-5{
-  bottom: 1.25rem;
-}
-
-.-top-10{
-  top: -2.5rem;
-}
-
-.-top-16{
-  top: -4rem;
-}
-
-.-top-32{
-  top: -8rem;
-}
-
-.-top-64{
-  top: -16rem;
-}
-
-.-top-72{
-  top: -18rem;
-}
-
 .-top-80{
   top: -20rem;
 }
@@ -971,7 +931,7 @@ body{
   background-color: rgba(224,228,252,0.5);
 }
 
-.bg-\[rgba\(215\2c 152\2c 225\2c 0\.15\)\]{
+.bg-maron{
   background-color: rgba(215,152,225,0.15);
 }
 
@@ -999,24 +959,8 @@ body{
   background-color: rgb(239 246 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\.\/assets\/img\/ins-track\.png\)\]{
-  background-image: url(./assets/img/ins-track.png);
-}
-
-.bg-\[url\(\.\/assets\/img\/product\/ins-track\.png\)\]{
-  background-image: url(./assets/img/product/ins-track.png);
-}
-
-.bg-\[url\(\.\/assets\/img\/product\/ins-track\.svg\)\]{
-  background-image: url(./assets/img/product/ins-track.svg);
-}
-
-.bg-\[url\(\.\/img\/product\/ins-track\.svg\)\]{
-  background-image: url(./img/product/ins-track.svg);
-}
-
-.bg-\[url\(\.\/img\/product\/lead-ins-grad\.svg\)\]{
-  background-image: url(./img/product/lead-ins-grad.svg);
+.bg-lightblue{
+  background-color: rgba(224,228,252,0.5);
 }
 
 .p-2{
