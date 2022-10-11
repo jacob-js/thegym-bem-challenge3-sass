@@ -105,10 +105,13 @@
         @apply absolute right-0 -top-[500px] scale-x-150 -z-10
     }
     .pricing__box{
-        @apply bg-white rounded-3xl
+        @apply bg-white rounded-3xl relative overflow-hidden transition-all
+    }
+    .pricing__box--selected{
+        @apply border-4 border-blue-500 after:absolute after:h-full after:w-full after:inset-0 after:bg-blue-200 after:bg-opacity-50 after:z-0 transition-all
     }
     .pricing__header{
-        @apply flex gap-6 items-center p-12 border-b pb-8
+        @apply flex gap-6 items-center p-12 border-b pb-8 relative z-10
     }
     .pricing__title{
         @apply text-3xl font-bold
@@ -117,7 +120,7 @@
         @apply opacity-60
     }
     .pricing__body{
-        @apply p-12
+        @apply p-12 relative z-10
     }
     .pricing__features{
         @apply flex flex-col gap-6
