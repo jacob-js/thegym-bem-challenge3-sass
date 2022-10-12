@@ -9,90 +9,90 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 <body>
-    <nav class="nav flex justify-between items-center px-20 py-5">
+    <nav class="nav">
         <img src="./assets/img/logo.svg" alt="" class="nav__logo">
-        <div class="flex gap-8 items-center">
+        <div class="nav__menus">
             <div class="nav__menu">Home</div>
             <a class="nav__menu" href="./product.html">Product</a>
             <div class="nav__menu">Pricing</div>
             <div class="nav__menu">About Us</div>
             <div class="nav__menu">Blog</div>
             <div class="nav__menu">Contact</div>
-            <button class="btn btn--primary">Free trial</button>
+            <button class="nav__trial-btn">Free trial</button>
         </div>
     </nav>
 
-    <section class="s-hero flex flex-col items-center py-20 gap-8 relative">
-        <div class="s-hero__contents relative z-10 flex flex-col items-center gap-10">
-            <div class="c-title text-[56px] leading-[110%] max-w-3xl text-center">The Best Software to Grow your Sales and Services</div>
-            <div class="c-subtitle max-w-3xl text-center">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</div>
-            <div class="flex w-[576px] mx-auto justify-between bg-white p-2 rounded-2xl">
-                <input type="email" class="c-input flex-1 px-5" placeholder="Enter Your Email">
-                <button class="btn btn--primary">Get Free trial</button>
+    <section class="hero">
+        <div class="hero__contents">
+            <div class="hero__title">The Best Software to Grow your Sales and Services</div>
+            <div class="hero__subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</div>
+            <div class="hero__actions">
+                <input type="email" class="hero__input" placeholder="Enter Your Email">
+                <button class="hero__btn">Get Free trial</button>
             </div>
-            <img src="./assets/img/dashb.png" alt="" class="max-w-5xl mt-4">
+            <img src="./assets/img/dashb.png" alt="" class="hero__image">
         </div>
 
-        <img src="./assets/img/hero-gradient.svg" alt="" class="s-hero__gradient">
+        <img src="./assets/img/hero-gradient.svg" alt="" class="hero__gradient">
     </section>
 
-    <section class="px-20 py-5 flex flex-col items-center gap-10">
-        <div class="c-gradient-title">High-quality</div>
-        <div class="c-title text-5xl text-center max-w-xl leading-[120%]">We have the Best Solution for your Business</div>
-        <div class="features grid grid-cols-3 bg-lightblue p-16 gap-8 rounded-xl mt-5">
-            <div class="features__item">
-                <img src="./assets/icons/sec.svg" alt="" class="features__icon">
-                <div class="c-title features__name">High security to protect from piracy</div>
-                <div class="c-subtitle features_desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</div>
+    <section class="qualities">
+        <div class="qualities__title">High-quality</div>
+        <div class="qualities__main-title">We have the Best Solution for your Business</div>
+        <div class="qualities__items">
+            <div class="qualities__item">
+                <img src="./assets/icons/sec.svg" alt="" class="qualities__icon">
+                <div class="qualities__name">High security to protect from piracy</div>
+                <div class="qualities_desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</div>
             </div>
 
-            <div class="features__item">
-                <img src="./assets/icons/like.svg" alt="" class="features__icon">
-                <div class="c-title features__name">Premium quality performance</div>
-                <div class="c-subtitle features_desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</div>
+            <div class="qualities__item">
+                <img src="./assets/icons/like.svg" alt="" class="qualities__icon">
+                <div class="qualities__name">Premium quality performance</div>
+                <div class="qualities_desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</div>
             </div>
 
-            <div class="features__item">
-                <img src="./assets/icons/headphones.svg" alt="" class="features__icon">
-                <div class="c-title features__name">Full time customer support - 24/7</div>
-                <div class="c-subtitle features_desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</div>
-            </div>
-        </div>
-    </section>
-
-    <section class="b-us px-20 py-20 space-y-6">
-        <div class="c-gradient-title b-us__title">Why should you work with us?</div>
-        <div class="grid grid-cols-[1fr,45%] gap-20">
-            <div class="flex flex-col gap-8">
-                <div class="c-title">To upscale your business to the next level</div>
-                <div class="c-subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua invidunt ut labore.</div>
-            </div>
-            <div class="flex flex-col gap-8">
-                <div class="flex gap-4">
-                    <img src="./assets/icons/arrow.svg" alt="">
-                    <div class="b-us__list-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</div>
-                </div>
-                <div class="flex gap-4">
-                    <img src="./assets/icons/arrow.svg" alt="">
-                    <div class="b-us__list-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</div>
-                </div>
-                <div class="flex gap-4">
-                    <img src="./assets/icons/arrow.svg" alt="">
-                    <div class="b-us__list-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</div>
-                </div>
+            <div class="qualities__item">
+                <img src="./assets/icons/headphones.svg" alt="" class="qualities__icon">
+                <div class="qualities__name">Full time customer support - 24/7</div>
+                <div class="qualities_desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</div>
             </div>
         </div>
     </section>
 
-    <section class="mt-10 p-20 s-stats flex justify-between items-center">
-        <div class="flex flex-col gap-10 w-[45%]">
-            <div class="c-title max-w-xl">More impressions, more conversions</div>
-            <div class="c-subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua invidunt ut labore.</div>
-            <button class="btn btn--primary w-max">Get Free trial</button>
+    <section class="why-us">
+        <div class="why-us__title">Why should you work with us?</div>
+        <div class="why-us__container">
+            <div class="why-us__intro">
+                <div class="why-us__main-title">To upscale your business to the next level</div>
+                <div class="why-us__desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua invidunt ut labore.</div>
+            </div>
+            <div class="why-us__details">
+                <div class="why-us__detail">
+                    <img src="./assets/icons/arrow.svg" alt="">
+                    <div class="why-us__list-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</div>
+                </div>
+                <div class="why-us__detail">
+                    <img src="./assets/icons/arrow.svg" alt="">
+                    <div class="why-us__list-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</div>
+                </div>
+                <div class="why-us__detail">
+                    <img src="./assets/icons/arrow.svg" alt="">
+                    <div class="why-us__list-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stats__details">
+            <div class="stats__title">More impressions, more conversions</div>
+            <div class="stats__subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua invidunt ut labore.</div>
+            <button class="stats__trial-btn">Get Free trial</button>
         </div>
         <img src="./assets/img/stats.png" alt="">
     </section>
-    <section class="p-20 flex justify-between">
+    <section class="partners">
         <img src="./assets/img/partner1.svg" alt="">
         <img src="./assets/img/partner2.svg" alt="">
         <img src="./assets/img/partner3.svg" alt="">
@@ -100,67 +100,67 @@
         <img src="./assets/img/partner5.svg" alt="">
     </section>
 
-    <section class="p-20">
-        <div class="c-gradient-title max-w-[156px]">Discover More</div>
-        <div class="flex justify-between items-center">
-            <div class="max-w-[45%] flex flex-col gap-8">
-                <div class="c-title">Analyze your sales and marketing leads</div>
-                <div class="c-subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua invidunt ut labore.</div>
+    <section class="discover-more">
+        <div class="discover-more__title">Discover More</div>
+        <div class="discover-more__content">
+            <div class="discover-more__details">
+                <div class="discover-more__main-title">Analyze your sales and marketing leads</div>
+                <div class="discover-more__subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua invidunt ut labore.</div>
             </div>
-            <div class="flex flex-col gap-9">
-                <div class="flex gap-6">
+            <div class="discover-more__items">
+                <div class="discover-more__item">
                     <img src="./assets/icons/sales.svg" alt="">
-                    <div class="flex flex-col gap-2">
-                        <div class="text-2xl font-bold">Sales Tracking</div>
-                        <div class="c-subtitle text-lg">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</div>
+                    <div class="discover-more__item-content">
+                        <div class="discover-more__item-name">Sales Tracking</div>
+                        <div class="discover-more__item-desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</div>
                     </div>
                 </div>
-                <div class="flex gap-6">
+                <div class="discover-more__item">
                     <img src="./assets/icons/manager.svg" alt="">
-                    <div class="flex flex-col gap-2">
-                        <div class="text-2xl font-bold">Project Management</div>
-                        <div class="c-subtitle text-lg">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</div>
+                    <div class="discover-more__item-content">
+                        <div class="discover-more__item-name">Project Management</div>
+                        <div class="discover-more__item-desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</div>
                     </div>
                 </div>
-                <div class="flex gap-6">
+                <div class="discover-more__item">
                     <img src="./assets/icons/reporter.svg" alt="">
-                    <div class="flex flex-col gap-2">
-                        <div class="text-2xl font-bold">Activity Report</div>
-                        <div class="c-subtitle text-lg">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</div>
+                    <div class="discover-more__item-content">
+                        <div class="discover-more__item-name">Activity Report</div>
+                        <div class="discover-more__item-desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="px-20 py-5 flex flex-col items-center gap-10">
-        <h2 class="c-title text-center">Features</h2>
-        <div class="features grid grid-cols-3 bg-maron p-16 gap-8 rounded-xl mt-5">
+    <section class="features">
+        <h2 class="features__title">Features</h2>
+        <div class="features__container">
             <div class="features__item">
                 <img src="./assets/icons/feat1.svg" alt="" class="features__icon">
-                <div class="c-title features__name">Advanced 256-bit encryption</div>
-                <div class="c-subtitle features_desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</div>
+                <div class="features__name">Advanced 256-bit encryption</div>
+                <div class="features__desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</div>
             </div>
 
             <div class="features__item features__item--box">
                 <img src="./assets/icons/feat2.svg" alt="" class="features__icon">
-                <div class="c-title features__name">Simple collaboration tools</div>
-                <div class="c-subtitle features_desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</div>
+                <div class="features__name">Simple collaboration tools</div>
+                <div class="features__desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</div>
             </div>
 
             <div class="features__item features__item--box">
                 <img src="./assets/icons/feat3.svg" alt="" class="features__icon">
-                <div class="c-title features__name">Customizable AI features</div>
-                <div class="c-subtitle features_desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</div>
+                <div class="features__name">Customizable AI features</div>
+                <div class="features__desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</div>
             </div>
         </div>
     </section>
 
-    <section class="mt-10 p-20 flex flex-col items-center">
-        <h2 class="c-title max-w-2xl text-center">The stunning results our
+    <section class="clients">
+        <h2 class="clients__title">The stunning results our
             customers have experienced</h2>
 
-        <div class="clients grid grid-cols-3 gap-6 mt-12">
+        <div class="clients__cards">
             <div class="clients__card">
                 <div class="clients__msg">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>
                 <img src="./assets/img/c1.png" alt="" class="clients__avatar">
@@ -182,58 +182,58 @@
         </div>
     </section>
 
-    <div class="p-20 relative overflow-hidden h-[500px]">
-        <div class="flex flex-col items-center gap-6 relative z-10">
-            <h2 class="c-title max-w-2xl text-center">Are you ready to grow your business with us?</h2>
-            <div class="c-subtitle">Lorem ipsum dolor sit amet, consetetur ￼
+    <div class="call-to-act">
+        <div class="call-to-act__content">
+            <h2 class="call-to-act__title">Are you ready to grow your business with us?</h2>
+            <div class="call-to-act__subtitle">Lorem ipsum dolor sit amet, consetetur
                 Subscribe to our Nesadipscing elitr, sed diam nonumy.</div>
-            <button class="btn btn--primary">View Pricing</button>
+            <button class="call-to-act__btn">View Pricing</button>
         </div>
-        <img src="./assets/img/footer-blur-bg.png" alt="" class="absolute w-full left-0 top-6 z-0">
+        <img src="./assets/img/footer-blur-bg.png" alt="" class="call-to-act__blur-bg">
     </div>
 
-    <footer class="footer bg-primary p-20">
-        <div class="grid grid-cols-5 gap-10">
-            <div class="flex flex-col gap-2">
-                <div class="font-semibold text-white text-lg">Company</div>
-                <div class="text-gray-400 cursor-pointer">About Us</div>
-                <div class="text-gray-400 cursor-pointer">Why Choose Us</div>
-                <div class="text-gray-400 cursor-pointer">Pricing</div>
-                <div class="text-gray-400 cursor-pointer">Testimonial</div>
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__items">
+                <div class="footer__item-title">Company</div>
+                <div class="footer__item">About Us</div>
+                <div class="footer__item">Why Choose Us</div>
+                <div class="footer__item">Pricing</div>
+                <div class="footer__item">Testimonial</div>
             </div>
-            <div class="flex flex-col gap-2">
-                <div class="font-semibold text-white text-lg">Resources</div>
-                <div class="text-gray-400 cursor-pointer">Privacy Policy</div>
-                <div class="text-gray-400 cursor-pointer">Terms and Condition</div>
-                <div class="text-gray-400 cursor-pointer">Blog</div>
-                <div class="text-gray-400 cursor-pointer">Contact Us</div>
+            <div class="footer__items">
+                <div class="footer__item-title">Resources</div>
+                <div class="footer__item">Privacy Policy</div>
+                <div class="footer__item">Terms and Condition</div>
+                <div class="footer__item">Blog</div>
+                <div class="footer__item">Contact Us</div>
             </div>
-            <div class="flex flex-col gap-2">
-                <div class="font-semibold text-white text-lg">Products</div>
-                <div class="text-gray-400 cursor-pointer">Project Management</div>
-                <div class="text-gray-400 cursor-pointer">Time Tracker</div>
-                <div class="text-gray-400 cursor-pointer">Time Schedule</div>
-                <div class="text-gray-400 cursor-pointer">Lead Generate</div>
-                <div class="text-gray-400 cursor-pointer">Remote Collaboration</div>
+            <div class="footer__items">
+                <div class="footer__item-title">Products</div>
+                <div class="footer__item">Project Management</div>
+                <div class="footer__item">Time Tracker</div>
+                <div class="footer__item">Time Schedule</div>
+                <div class="footer__item">Lead Generate</div>
+                <div class="footer__item">Remote Collaboration</div>
             </div>
 
-            <div class="flex flex-col gap-4 col-span-2 items-start">
-                <img src="./assets/img/logo-white.svg" alt="" class="h-8">
-                <div class="text-white font-semibold mt-6 text-lg">Subscribe to our Newsletter</div>
-                <div class="flex justify-between overflow-hidden bg-gray-700 rounded-lg">
-                    <input type="email" class="c-input text-white bg-transparent flex-1 px-5" placeholder="Enter Your Email">
-                    <button class="btn btn--reverse">Subscribe</button>
+            <div class="footer__news-letter">
+                <img src="./assets/img/logo-white.svg" alt="" class="footer__logo">
+                <div class="footer__subscribe-text">Subscribe to our Newsletter</div>
+                <div class="footer__input-container">
+                    <input type="email" class="footer__input" placeholder="Enter Your Email">
+                    <button class="footer__subscribe-btn">Subscribe</button>
                 </div>
             </div>
         </div>
-        <div class="flex items-center gap-8 mt-12">
-            <div class="flex-1 h-[1px] bg-gray-400"></div>
-            <div class="text-gray-400 text-xs">© Copyright Finsweet 2022</div>
-            <i class="bi bi-facebook text-gray-400 text-xl"></i>
-            <i class="bi bi-twitter text-gray-400 text-xl"></i>
-            <i class="bi bi-instagram text-gray-400 text-xl"></i>
-            <i class="bi bi-linkedin text-gray-400 text-xl"></i>
-            <div class="flex-1 h-[1px] bg-gray-400 text-xl"></div>
+        <div class="footer__contact">
+            <div class="footer__line"></div>
+            <div class="footer__right">© Copyright Finsweet 2022</div>
+            <i class="bi bi-facebook footer__social-icon"></i>
+            <i class="bi bi-twitter footer__social-icon"></i>
+            <i class="bi bi-instagram footer__social-icon"></i>
+            <i class="bi bi-linkedin footer__social-icon"></i>
+            <div class="footer__line"></div>
         </div>
     </footer>
 </body>

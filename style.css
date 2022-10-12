@@ -4,19 +4,105 @@
 @tailwind components;
 @tailwind utilities;
 
-.s-stats{
-    background-image: url('./img/stats-bg.png');
-}
-
 @layer components{
     body{
         @apply text-primary overflow-x-hidden;
         font-family: 'Roboto', sans-serif;
     }
+    .nav{
+        @apply flex justify-between items-center px-20 py-5
+    }
+    .nav__menus{
+        @apply flex gap-8 items-center
+    }
     .nav__menu{
         @apply text-gray-800 cursor-pointer text-base font-normal
     }
-    .btn{
+    .nav__trial-btn, .hero__btn, .stats__trial-btn, .call-to-act__btn, .prod-hero__start-btn, .pricing-hero__active-btn, .pricing__btn{
+        @apply bg-none border-transparent py-4 px-10 outline-none font-bold transition-all bg-primary text-white rounded-xl w-max
+    }
+    .hero{
+        @apply flex flex-col items-center py-20 gap-8 relative
+    }
+    .hero__contents{
+        @apply relative z-10 flex flex-col items-center gap-10
+    }
+    .hero__title, .prod-hero__title, .pricing-hero__title{
+        @apply text-[56px] font-bold leading-[110%] max-w-3xl text-center
+    }
+    .hero__subtitle, .prod-hero__subtitle{
+        @apply max-w-3xl text-center text-base opacity-90
+    }
+    .hero__actions{
+        @apply flex w-[576px] mx-auto justify-between bg-white p-2 rounded-2xl
+    }
+    .hero__input{
+        @apply bg-white border-none outline-none flex-1 px-5
+    }
+    .hero__image{
+        @apply max-w-5xl mt-4
+    }
+    .qualities{
+        @apply px-20 py-5 flex flex-col items-center gap-10
+    }
+    .qualities__main-title{
+        @apply text-5xl font-bold text-center max-w-xl leading-[120%]
+    }
+    .qualities__items{
+        @apply grid grid-cols-3 bg-lightblue p-16 gap-8 rounded-xl mt-5
+    }
+    .qualities__name{
+        @apply text-[32px] font-bold leading-[120%]
+    }
+    .qualities__desc{
+        @apply text-base opacity-90
+    }
+    .stats{
+        @apply mt-10 p-20 flex justify-between items-center bg-[url('./img/stats-bg.png')]
+    }
+    .stats__details{
+        @apply flex flex-col gap-10 w-[45%]
+    }
+    .stats__title{
+        @apply max-w-xl
+    }
+    .partners{
+        @apply p-20 flex justify-between
+    }
+    .discover-more{
+        @apply p-20
+    }
+    .discover-more__title{
+        @apply max-w-[156px]
+    }
+    .discover-more__content{
+        @apply flex justify-between items-center
+    }
+    .discover-more__details{
+        @apply max-w-[45%] flex flex-col gap-8
+    }
+    .discover-more__items{
+        @apply flex flex-col gap-9
+    }
+    .discover-more__item{
+        @apply flex gap-6
+    }
+    .discover-more__item-content{
+        @apply flex flex-col gap-2
+    }
+    .discover-more__item-name{
+        @apply text-2xl font-bold
+    }
+    .discover-more__item-desc{
+        @apply text-lg opacity-90
+    }
+    .features{
+        @apply px-20 py-5 flex flex-col items-center gap-10 text-center
+    }
+    .features__container{
+        @apply grid grid-cols-3 bg-maron p-16 gap-8 rounded-xl mt-5 text-left
+    }
+    .btn, .pricing-hero__btn{
         @apply bg-none border-transparent py-4 px-10 outline-none font-bold transition-all
     }
     .btn--primary{
@@ -28,21 +114,24 @@
     .btn--outline{
         @apply bg-transparent text-primary border-2 border-blue-100 rounded-xl active:bg-primary active:text-white active:border-transparent
     }
-    .c-title{
+    .prod-hero__contact-btn{
+        @apply bg-transparent text-primary border-2 border-blue-100 rounded-xl active:bg-primary active:text-white active:border-transparent py-4 px-10 outline-none font-bold transition-all
+    }
+    .c-title, .why-us__main-title, .stats__title, .discover-more__main-title, .features__title, .features__name, .clients__title, .call-to-act__title, .prod-features__title, .insights__title{
         @apply font-bold text-[48px] leading-[120%]
     }
-    .c-subtitle{
+    .c-subtitle, .why-us__desc, .stats__subtitle, .discover-more__subtitle, .features__desc, .call-to-act__subtitle, .insights__subtitle, .pricing-hero__subtitle{
         @apply text-base opacity-90
     }
-    .s-hero__gradient{
+    .s-hero__gradient, .hero__gradient, .prod-hero__gradient{
         position: absolute;
         top: -80px;
         z-index: -1;
     }
-    .c-input{
+    .c-input, .footer__input{
         @apply bg-white border-none outline-none
     }
-    .c-gradient-title{
+    .c-gradient-title, .qualities__title, .why-us__title, .discover-more__title, .insights__gradient-title{
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 700;
@@ -53,21 +142,45 @@
         -webkit-text-fill-color: transparent;
         background-clip: text;
     }
-    .features__item{
-        @apply space-y-4
+    .features__item, .qualities__item, .prod-features__item{
+        @apply space-y-4 text-left
     }
     .features__name{
         @apply text-[32px]
     }
-    .b-us__title{
+    .why-us{
+        @apply px-20 py-20 space-y-6
+    }
+    .why-us__title{
         width: 325px;
         height: 29px;
     }
-    .b-us__list-item{
+    .why-us__container{
+        @apply grid grid-cols-[1fr,45%] gap-20
+    }
+    .why-us__intro{
+        @apply flex flex-col gap-8
+    }
+    .why-us__details{
+        @apply flex flex-col gap-8
+    }
+    .why-us__detail{
+        @apply flex gap-4
+    }
+    .why-us__list-item{
         @apply text-[20px] font-medium leading-[150%]
     }
     .features__item--box{
         @apply pl-6 border-l-2 border-l-gray-300
+    }
+    .clients{
+        @apply mt-10 p-20 flex flex-col items-center
+    }
+    .clients__title, .call-to-act__title{
+        @apply max-w-2xl text-center
+    }
+    .clients__cards{
+        @apply grid grid-cols-3 gap-6 mt-12
     }
     .clients__card{
         @apply border-2 flex flex-col items-center p-16 rounded-3xl
@@ -81,10 +194,86 @@
     .clients__job{
         @apply text-xs
     }
-    .product-features{
-        background: rgba(255, 255, 255, 0.59);
+    .call-to-act{
+        @apply p-20 relative overflow-hidden h-[500px]
     }
-    .product-features::before{
+    .call-to-act__content{
+        @apply flex flex-col items-center gap-6 relative z-10 text-center
+    }
+    .call-to-act__blur-bg{
+        @apply absolute w-full left-0 top-6 z-0
+    }
+    .footer{
+        @apply bg-primary p-20
+    }
+    .footer__content{
+        @apply grid grid-cols-5 gap-10
+    }
+    .footer__items{
+        @apply flex flex-col gap-2
+    }
+    .footer__item-title{
+        @apply font-semibold text-white text-lg
+    }
+    .footer__item{
+        @apply text-gray-400 cursor-pointer
+    }
+    .footer__news-letter{
+        @apply flex flex-col gap-4 col-span-2 items-start
+    }
+    .footer__logo{
+        @apply h-8
+    }
+    .footer__subscribe-text{
+        @apply text-white font-semibold mt-6 text-lg
+    }
+    .footer__input-container{
+        @apply flex justify-between overflow-hidden bg-gray-700 rounded-lg
+    }
+    .footer__input{
+        @apply text-white bg-transparent flex-1 px-5
+    }
+    .footer__subscribe-btn{
+        @apply border-transparent py-4 px-10 outline-none font-bold transition-all text-primary bg-white rounded-xl
+    }
+    .footer__contact{
+        @apply flex items-center gap-8 mt-12
+    }
+    .footer__line{
+        @apply flex-1 h-[1px] bg-gray-400
+    }
+    .footer__right{
+        @apply text-gray-400 text-xs
+    }
+    .footer__social-icon{
+        @apply text-gray-400 text-xl
+    }
+    .prod-hero{
+        @apply flex items-center justify-between py-20 gap-8 relative
+    }
+    .prod-hero__contents{
+        @apply w-2/4 relative px-20 z-10 flex flex-col gap-10
+    }
+    .prod-hero__btns{
+        @apply flex gap-4
+    }
+    .prod-hero__img-container{
+        @apply relative w-2/4 pr-20
+    }
+    .prod-hero__img{
+        @apply max-w-full
+    }
+    .prod-hero__gradient{
+        @apply right-0 top-0
+    }
+    .prod-features{
+        background: rgba(255, 255, 255, 0.59);
+        @apply mt-20 relative overflow-hidden pt-20 flex flex-col gap-10
+    }
+    .prod-features__title{
+        @apply text-5xl text-center max-w-3xl mx-auto leading-[120%]
+    }
+    .prod-features::before{
         content: '';
         position: absolute;
         width: 100%;
@@ -94,7 +283,46 @@
         background: radial-gradient(483.9% 2719.65% at -49.5% -250%, #D798E1 17.55%, #9BFFA5 27.56%, #AED3FF 49.89%, #C9D4EF 56.53%, #CACFFA 65.69%);
         filter: blur(350px);
     }
+    .prod-features__items{
+        @apply w-11/12 grid grid-cols-3 bg-blue-50 p-20 gap-8 rounded-tr-3xl mt-5
+    }
+    .insights{
+        @apply relative
+    }
+    .insights__gradient{
+        @apply absolute left-0
+    }
+    .insights__content{
+        @apply grid grid-cols-[1fr,45%] items-center gap-20 p-20
+    }
+    .insights__content--reverse{
+        @apply grid-cols-[45%,1fr]
+    }
+    .insights__details{
+        @apply flex flex-col gap-8
+    }
+    .insights__gradient-title{
+        @apply max-w-[208px]
+    }
+    .insights__img{
+        @apply max-w-[466px]
+    }
 
+    .pricing-hero{
+        @apply flex flex-col items-center py-20 gap-8 relative
+    }
+    .pricing-hero__contents{
+        @apply relative z-10 flex flex-col items-center gap-10
+    }
+    .pricing-hero__title{
+        @apply max-w-lg
+    }
+    .pricing-hero__subtitle{
+        @apply max-w-sm text-center
+    }
+    .pricing-hero__btns{
+        @apply flex mx-auto bg-gray-200 p-2 rounded-2xl
+    }
     .pricing{
         @apply grid grid-cols-3 gap-8 px-20 relative
     }
