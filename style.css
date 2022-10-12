@@ -18,7 +18,7 @@
     .nav__menu{
         @apply text-gray-800 cursor-pointer text-base font-normal
     }
-    .nav__trial-btn, .hero__btn, .stats__trial-btn, .call-to-act__btn, .prod-hero__start-btn, .pricing-hero__active-btn, .pricing__btn{
+    .nav__trial-btn, .hero__btn, .statistics__trial-btn, .view-pricing__btn, .prod-hero__start-btn, .pricing-hero__active-btn, .pricing__btn{
         @apply bg-none border-transparent py-4 px-10 outline-none font-bold transition-all bg-primary text-white rounded-xl w-max
     }
     .hero{
@@ -54,16 +54,16 @@
     .qualities__name{
         @apply text-[32px] font-bold leading-[120%]
     }
-    .qualities__desc{
+    .qualities__description{
         @apply text-base opacity-90
     }
-    .stats{
+    .statistics{
         @apply mt-10 p-20 flex justify-between items-center bg-[url('./img/stats-bg.png')]
     }
-    .stats__details{
+    .statistics__details{
         @apply flex flex-col gap-10 w-[45%]
     }
-    .stats__title{
+    .statistics__title{
         @apply max-w-xl
     }
     .partners{
@@ -93,7 +93,7 @@
     .discover-more__item-name{
         @apply text-2xl font-bold
     }
-    .discover-more__item-desc{
+    .discover-more__item-description{
         @apply text-lg opacity-90
     }
     .features{
@@ -117,10 +117,10 @@
     .prod-hero__contact-btn{
         @apply bg-transparent text-primary border-2 border-blue-100 rounded-xl active:bg-primary active:text-white active:border-transparent py-4 px-10 outline-none font-bold transition-all
     }
-    .c-title, .why-us__main-title, .stats__title, .discover-more__main-title, .features__title, .features__name, .clients__title, .call-to-act__title, .prod-features__title, .insights__title{
+    .c-title, .work__main-title, .statistics__title, .discover-more__main-title, .features__title, .features__name, .clients__title, .view-pricing__title, .prod-features__title, .insights__title{
         @apply font-bold text-[48px] leading-[120%]
     }
-    .c-subtitle, .why-us__desc, .stats__subtitle, .discover-more__subtitle, .features__desc, .call-to-act__subtitle, .insights__subtitle, .pricing-hero__subtitle{
+    .c-subtitle, .work__description, .statistics__subtitle, .discover-more__subtitle, .features__description, .view-pricing__subtitle, .insights__subtitle, .pricing-hero__subtitle{
         @apply text-base opacity-90
     }
     .s-hero__gradient, .hero__gradient, .prod-hero__gradient{
@@ -131,7 +131,7 @@
     .c-input, .footer__input{
         @apply bg-white border-none outline-none
     }
-    .c-gradient-title, .qualities__title, .why-us__title, .discover-more__title, .insights__gradient-title{
+    .c-gradient-title, .qualities__title, .work__title, .discover-more__title, .insights__gradient-title{
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 700;
@@ -148,26 +148,26 @@
     .features__name{
         @apply text-[32px]
     }
-    .why-us{
+    .work{
         @apply px-20 py-20 space-y-6
     }
-    .why-us__title{
+    .work__title{
         width: 325px;
         height: 29px;
     }
-    .why-us__container{
+    .work__container{
         @apply grid grid-cols-[1fr,45%] gap-20
     }
-    .why-us__intro{
+    .work__intro{
         @apply flex flex-col gap-8
     }
-    .why-us__details{
+    .work__details{
         @apply flex flex-col gap-8
     }
-    .why-us__detail{
+    .work__detail{
         @apply flex gap-4
     }
-    .why-us__list-item{
+    .work__list-item{
         @apply text-[20px] font-medium leading-[150%]
     }
     .features__item--box{
@@ -176,7 +176,7 @@
     .clients{
         @apply mt-10 p-20 flex flex-col items-center
     }
-    .clients__title, .call-to-act__title{
+    .clients__title, .view-pricing__title{
         @apply max-w-2xl text-center
     }
     .clients__cards{
@@ -185,7 +185,7 @@
     .clients__card{
         @apply border-2 flex flex-col items-center p-16 rounded-3xl
     }
-    .clients__msg{
+    .clients__message{
         @apply text-center font-semibold mb-3
     }
     .clients__name{
@@ -194,13 +194,13 @@
     .clients__job{
         @apply text-xs
     }
-    .call-to-act{
+    .view-pricing{
         @apply p-20 relative overflow-hidden h-[500px]
     }
-    .call-to-act__content{
+    .view-pricing__content{
         @apply flex flex-col items-center gap-6 relative z-10 text-center
     }
-    .call-to-act__blur-bg{
+    .view-pricing__blur-bg{
         @apply absolute w-full left-0 top-6 z-0
     }
     .footer{

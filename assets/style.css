@@ -538,7 +538,7 @@ body{
   color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
-.nav__trial-btn,  .hero__btn,  .stats__trial-btn,  .call-to-act__btn,  .prod-hero__start-btn,  .pricing-hero__active-btn,  .pricing__btn{
+.nav__trial-btn,  .hero__btn,  .statistics__trial-btn,  .view-pricing__btn,  .prod-hero__start-btn,  .pricing-hero__active-btn,  .pricing__btn{
   width: -moz-max-content;
   width: max-content;
   border-radius: 0.75rem;
@@ -659,7 +659,13 @@ body{
   line-height: 120%;
 }
 
-.stats{
+.qualities__description{
+  font-size: 1rem;
+  line-height: 1.5rem;
+  opacity: 0.9;
+}
+
+.statistics{
   margin-top: 2.5rem;
   display: flex;
   align-items: center;
@@ -668,14 +674,14 @@ body{
   padding: 5rem;
 }
 
-.stats__details{
+.statistics__details{
   display: flex;
   width: 45%;
   flex-direction: column;
   gap: 2.5rem;
 }
 
-.stats__title{
+.statistics__title{
   max-width: 36rem;
 }
 
@@ -729,7 +735,7 @@ body{
   font-weight: 700;
 }
 
-.discover-more__item-desc{
+.discover-more__item-description{
   font-size: 1.125rem;
   line-height: 1.75rem;
   opacity: 0.9;
@@ -801,13 +807,13 @@ body{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.c-title,  .why-us__main-title,  .stats__title,  .discover-more__main-title,  .features__title,  .features__name,  .clients__title,  .call-to-act__title,  .prod-features__title,  .insights__title{
+.c-title,  .work__main-title,  .statistics__title,  .discover-more__main-title,  .features__title,  .features__name,  .clients__title,  .view-pricing__title,  .prod-features__title,  .insights__title{
   font-size: 48px;
   font-weight: 700;
   line-height: 120%;
 }
 
-.c-subtitle,  .why-us__desc,  .stats__subtitle,  .discover-more__subtitle,  .features__desc,  .call-to-act__subtitle,  .insights__subtitle,  .pricing-hero__subtitle{
+.c-subtitle,  .work__description,  .statistics__subtitle,  .discover-more__subtitle,  .features__description,  .view-pricing__subtitle,  .insights__subtitle,  .pricing-hero__subtitle{
   font-size: 1rem;
   line-height: 1.5rem;
   opacity: 0.9;
@@ -827,7 +833,7 @@ body{
   outline-offset: 2px;
 }
 
-.c-gradient-title, .qualities__title, .why-us__title, .discover-more__title, .insights__gradient-title{
+.c-gradient-title, .qualities__title, .work__title, .discover-more__title, .insights__gradient-title{
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -853,48 +859,48 @@ body{
   font-size: 32px;
 }
 
-.why-us > :not([hidden]) ~ :not([hidden]){
+.work > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
-.why-us{
+.work{
   padding-left: 5rem;
   padding-right: 5rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
 
-.why-us__title{
+.work__title{
   width: 325px;
   height: 29px;
 }
 
-.why-us__container{
+.work__container{
   display: grid;
   grid-template-columns: 1fr 45%;
   gap: 5rem;
 }
 
-.why-us__intro{
+.work__intro{
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-.why-us__details{
+.work__details{
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-.why-us__detail{
+.work__detail{
   display: flex;
   gap: 1rem;
 }
 
-.why-us__list-item{
+.work__list-item{
   font-size: 20px;
   font-weight: 500;
   line-height: 150%;
@@ -915,7 +921,7 @@ body{
   padding: 5rem;
 }
 
-.clients__title,  .call-to-act__title{
+.clients__title,  .view-pricing__title{
   max-width: 42rem;
   text-align: center;
 }
@@ -936,7 +942,7 @@ body{
   padding: 4rem;
 }
 
-.clients__msg{
+.clients__message{
   margin-bottom: 0.75rem;
   text-align: center;
   font-weight: 600;
@@ -954,14 +960,14 @@ body{
   line-height: 1rem;
 }
 
-.call-to-act{
+.view-pricing{
   position: relative;
   height: 500px;
   overflow: hidden;
   padding: 5rem;
 }
 
-.call-to-act__content{
+.view-pricing__content{
   position: relative;
   z-index: 10;
   display: flex;
@@ -971,7 +977,7 @@ body{
   text-align: center;
 }
 
-.call-to-act__blur-bg{
+.view-pricing__blur-bg{
   position: absolute;
   left: 0px;
   top: 1.5rem;
