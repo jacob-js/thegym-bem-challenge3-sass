@@ -508,9 +508,9 @@ video {
 
 body{
   overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
   --tw-text-opacity: 1;
   color: rgb(29 33 48 / var(--tw-text-opacity));
-  font-family: 'Roboto', sans-serif;
 }
 
 .nav{
@@ -819,9 +819,9 @@ body{
   opacity: 0.9;
 }
 
-.s-hero__gradient, .hero__gradient, .product-hero__gradient{
+.s-hero__gradient,  .hero__gradient,  .product-hero__gradient{
   position: absolute;
-  top: -80px;
+  top: -5rem;
   z-index: -1;
 }
 
@@ -833,16 +833,15 @@ body{
   outline-offset: 2px;
 }
 
-.c-gradient-title, .qualities__title, .work__title, .discover-more__title, .insights__gradient-title{
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 120%;
-  background: linear-gradient(53.94deg, #373FFF 15.02%, #3ACAF8 82.83%);
+.c-gradient-title,  .qualities__title,  .work__title,  .discover-more__title,  .insights__gradient-title{
+  background-image: linear-gradient(53.94deg, #373FFF 15.02%, #3ACAF8 82.83%);
   -webkit-background-clip: text;
+          background-clip: text;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  line-height: 120%;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 .features__item > :not([hidden]) ~ :not([hidden]),  .qualities__item > :not([hidden]) ~ :not([hidden]),  .product-features__item > :not([hidden]) ~ :not([hidden]){
@@ -873,8 +872,8 @@ body{
 }
 
 .work__title{
-  width: 325px;
   height: 29px;
+  width: 325px;
 }
 
 .work__container{
@@ -1145,35 +1144,39 @@ body{
 }
 
 .product-features{
-  background: rgba(255, 255, 255, 0.59);
   position: relative;
   margin-top: 5rem;
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
   overflow: hidden;
-  padding-top: 5rem
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.3;
+  padding-top: 5rem;
+}
+
+.product-features::before{
+  position: absolute;
+  left: 0px;
+  z-index: -10;
+  height: 400px;
+  width: 100%;
+  background-image: radial-gradient(483.9% 2719.65% at -49.5% -250%, #D798E1 17.55%, #9BFFA5 27.56%, #AED3FF 49.89%, #C9D4EF 56.53%, #CACFFA 65.69%);
+  --tw-blur: blur(350px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  --tw-content: '';
+  content: var(--tw-content);
 }
 
 .product-features__title{
   margin-left: auto;
   margin-right: auto;
   max-width: 48rem;
-  text-align: center;
-  font-size: 3rem;
-  line-height: 1;
+  text-align: left;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
   line-height: 120%;
-}
-
-.product-features::before{
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 400px;
-  left: 0;
-  z-index: -1;
-  background: radial-gradient(483.9% 2719.65% at -49.5% -250%, #D798E1 17.55%, #9BFFA5 27.56%, #AED3FF 49.89%, #C9D4EF 56.53%, #CACFFA 65.69%);
-  filter: blur(350px);
 }
 
 .product-features__items{
@@ -1186,13 +1189,6 @@ body{
   --tw-bg-opacity: 1;
   background-color: rgb(239 246 255 / var(--tw-bg-opacity));
   padding: 5rem;
-}
-
-.product-features__title{
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: 700;
-  line-height: 120%;
 }
 
 .insights{
@@ -1400,38 +1396,10 @@ body{
   justify-content: center;
 }
 
-.relative{
-  position: relative;
-}
-
-.z-10{
-  z-index: 10;
-}
-
 .mt-8{
   margin-top: 2rem;
 }
 
-.grid{
-  display: grid;
-}
-
 .grow{
   flex-grow: 1;
-}
-
-.grid-cols-\[45\%\2c 1fr\]{
-  grid-template-columns: 45% 1fr;
-}
-
-.items-center{
-  align-items: center;
-}
-
-.gap-20{
-  gap: 5rem;
-}
-
-.p-20{
-  padding: 5rem;
 }
