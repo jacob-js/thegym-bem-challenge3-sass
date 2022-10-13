@@ -18,7 +18,7 @@
     .nav__menu{
         @apply text-gray-800 cursor-pointer text-base font-normal
     }
-    .nav__trial-btn, .hero__btn, .statistics__trial-btn, .view-pricing__btn, .prod-hero__start-btn, .pricing-hero__active-btn, .pricing__btn{
+    .nav__trial-btn, .hero__btn, .statistics__trial-btn, .view-pricing__btn, .product-hero__start-btn, .pricing-hero__active-btn, .pricing__btn{
         @apply bg-none border-transparent py-4 px-10 outline-none font-bold transition-all bg-primary text-white rounded-xl w-max
     }
     .hero{
@@ -27,10 +27,10 @@
     .hero__contents{
         @apply relative z-10 flex flex-col items-center gap-10
     }
-    .hero__title, .prod-hero__title, .pricing-hero__title{
+    .hero__title, .product-hero__title, .pricing-hero__title{
         @apply text-[56px] font-bold leading-[110%] max-w-3xl text-center
     }
-    .hero__subtitle, .prod-hero__subtitle{
+    .hero__subtitle, .product-hero__subtitle{
         @apply max-w-3xl text-center text-base opacity-90
     }
     .hero__actions{
@@ -114,16 +114,16 @@
     .btn--outline{
         @apply bg-transparent text-primary border-2 border-blue-100 rounded-xl active:bg-primary active:text-white active:border-transparent
     }
-    .prod-hero__contact-btn{
+    .product-hero__contact-btn{
         @apply bg-transparent text-primary border-2 border-blue-100 rounded-xl active:bg-primary active:text-white active:border-transparent py-4 px-10 outline-none font-bold transition-all
     }
-    .c-title, .work__main-title, .statistics__title, .discover-more__main-title, .features__title, .features__name, .clients__title, .view-pricing__title, .prod-features__title, .insights__title{
+    .c-title, .work__main-title, .statistics__title, .discover-more__main-title, .features__title, .features__name, .clients__title, .view-pricing__title, .product-features__title, .insights__title{
         @apply font-bold text-[48px] leading-[120%]
     }
-    .c-subtitle, .work__description, .statistics__subtitle, .discover-more__subtitle, .features__description, .view-pricing__subtitle, .insights__subtitle, .pricing-hero__subtitle{
+    .c-subtitle, .work__description, .statistics__subtitle, .discover-more__subtitle, .features__description, .view-pricing__subtitle, .insights__subtitle, .pricing-hero__subtitle, .product__features-description{
         @apply text-base opacity-90
     }
-    .s-hero__gradient, .hero__gradient, .prod-hero__gradient{
+    .s-hero__gradient, .hero__gradient, .product-hero__gradient{
         position: absolute;
         top: -80px;
         z-index: -1;
@@ -142,7 +142,7 @@
         -webkit-text-fill-color: transparent;
         background-clip: text;
     }
-    .features__item, .qualities__item, .prod-features__item{
+    .features__item, .qualities__item, .product-features__item{
         @apply space-y-4 text-left
     }
     .features__name{
@@ -200,7 +200,7 @@
     .view-pricing__content{
         @apply flex flex-col items-center gap-6 relative z-10 text-center
     }
-    .view-pricing__blur-bg{
+    .view-pricing__blurred-background{
         @apply absolute w-full left-0 top-6 z-0
     }
     .footer{
@@ -248,32 +248,32 @@
     .footer__social-icon{
         @apply text-gray-400 text-xl
     }
-    .prod-hero{
+    .product-hero{
         @apply flex items-center justify-between py-20 gap-8 relative
     }
-    .prod-hero__contents{
+    .product-hero__contents{
         @apply w-2/4 relative px-20 z-10 flex flex-col gap-10
     }
-    .prod-hero__btns{
+    .product-hero__btns{
         @apply flex gap-4
     }
-    .prod-hero__img-container{
+    .product-hero__img-container{
         @apply relative w-2/4 pr-20
     }
-    .prod-hero__img{
+    .product-hero__img{
         @apply max-w-full
     }
-    .prod-hero__gradient{
+    .product-hero__gradient{
         @apply right-0 top-0
     }
-    .prod-features{
+    .product-features{
         background: rgba(255, 255, 255, 0.59);
         @apply mt-20 relative overflow-hidden pt-20 flex flex-col gap-10
     }
-    .prod-features__title{
+    .product-features__title{
         @apply text-5xl text-center max-w-3xl mx-auto leading-[120%]
     }
-    .prod-features::before{
+    .product-features::before{
         content: '';
         position: absolute;
         width: 100%;
@@ -283,8 +283,11 @@
         background: radial-gradient(483.9% 2719.65% at -49.5% -250%, #D798E1 17.55%, #9BFFA5 27.56%, #AED3FF 49.89%, #C9D4EF 56.53%, #CACFFA 65.69%);
         filter: blur(350px);
     }
-    .prod-features__items{
+    .product-features__items{
         @apply w-11/12 grid grid-cols-3 bg-blue-50 p-20 gap-8 rounded-tr-3xl mt-5
+    }
+    .product-features__title{
+        @apply font-bold text-2xl leading-[120%]
     }
     .insights{
         @apply relative
@@ -293,7 +296,7 @@
         @apply absolute left-0
     }
     .insights__content{
-        @apply grid grid-cols-[1fr,45%] items-center gap-20 p-20
+        @apply grid grid-cols-[1fr,45%] items-center gap-20 p-20 relative z-10
     }
     .insights__content--reverse{
         @apply grid-cols-[45%,1fr]
@@ -306,6 +309,9 @@
     }
     .insights__img{
         @apply max-w-[466px]
+    }
+    .insights__background{
+        @apply absolute right-0 -top-80 z-0
     }
 
     .pricing-hero{

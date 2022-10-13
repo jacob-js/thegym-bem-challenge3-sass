@@ -538,7 +538,7 @@ body{
   color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
-.nav__trial-btn,  .hero__btn,  .statistics__trial-btn,  .view-pricing__btn,  .prod-hero__start-btn,  .pricing-hero__active-btn,  .pricing__btn{
+.nav__trial-btn,  .hero__btn,  .statistics__trial-btn,  .view-pricing__btn,  .product-hero__start-btn,  .pricing-hero__active-btn,  .pricing__btn{
   width: -moz-max-content;
   width: max-content;
   border-radius: 0.75rem;
@@ -579,7 +579,7 @@ body{
   gap: 2.5rem;
 }
 
-.hero__title,  .prod-hero__title,  .pricing-hero__title{
+.hero__title,  .product-hero__title,  .pricing-hero__title{
   max-width: 48rem;
   text-align: center;
   font-size: 56px;
@@ -587,7 +587,7 @@ body{
   line-height: 110%;
 }
 
-.hero__subtitle,  .prod-hero__subtitle{
+.hero__subtitle,  .product-hero__subtitle{
   max-width: 48rem;
   text-align: center;
   font-size: 1rem;
@@ -779,7 +779,7 @@ body{
   transition-duration: 150ms;
 }
 
-.prod-hero__contact-btn{
+.product-hero__contact-btn{
   border-radius: 0.75rem;
   border-width: 2px;
   --tw-border-opacity: 1;
@@ -799,7 +799,7 @@ body{
   transition-duration: 150ms;
 }
 
-.prod-hero__contact-btn:active{
+.product-hero__contact-btn:active{
   border-color: transparent;
   --tw-bg-opacity: 1;
   background-color: rgb(29 33 48 / var(--tw-bg-opacity));
@@ -807,19 +807,19 @@ body{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.c-title,  .work__main-title,  .statistics__title,  .discover-more__main-title,  .features__title,  .features__name,  .clients__title,  .view-pricing__title,  .prod-features__title,  .insights__title{
+.c-title,  .work__main-title,  .statistics__title,  .discover-more__main-title,  .features__title,  .features__name,  .clients__title,  .view-pricing__title,  .product-features__title,  .insights__title{
   font-size: 48px;
   font-weight: 700;
   line-height: 120%;
 }
 
-.c-subtitle,  .work__description,  .statistics__subtitle,  .discover-more__subtitle,  .features__description,  .view-pricing__subtitle,  .insights__subtitle,  .pricing-hero__subtitle{
+.c-subtitle,  .work__description,  .statistics__subtitle,  .discover-more__subtitle,  .features__description,  .view-pricing__subtitle,  .insights__subtitle,  .pricing-hero__subtitle,  .product__features-description{
   font-size: 1rem;
   line-height: 1.5rem;
   opacity: 0.9;
 }
 
-.s-hero__gradient, .hero__gradient, .prod-hero__gradient{
+.s-hero__gradient, .hero__gradient, .product-hero__gradient{
   position: absolute;
   top: -80px;
   z-index: -1;
@@ -845,13 +845,13 @@ body{
   background-clip: text;
 }
 
-.features__item > :not([hidden]) ~ :not([hidden]),  .qualities__item > :not([hidden]) ~ :not([hidden]),  .prod-features__item > :not([hidden]) ~ :not([hidden]){
+.features__item > :not([hidden]) ~ :not([hidden]),  .qualities__item > :not([hidden]) ~ :not([hidden]),  .product-features__item > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
-.features__item,  .qualities__item,  .prod-features__item{
+.features__item,  .qualities__item,  .product-features__item{
   text-align: left;
 }
 
@@ -977,7 +977,7 @@ body{
   text-align: center;
 }
 
-.view-pricing__blur-bg{
+.view-pricing__blurred-background{
   position: absolute;
   left: 0px;
   top: 1.5rem;
@@ -1103,7 +1103,7 @@ body{
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
-.prod-hero{
+.product-hero{
   position: relative;
   display: flex;
   align-items: center;
@@ -1113,7 +1113,7 @@ body{
   padding-bottom: 5rem;
 }
 
-.prod-hero__contents{
+.product-hero__contents{
   position: relative;
   z-index: 10;
   display: flex;
@@ -1124,27 +1124,27 @@ body{
   padding-right: 5rem;
 }
 
-.prod-hero__btns{
+.product-hero__btns{
   display: flex;
   gap: 1rem;
 }
 
-.prod-hero__img-container{
+.product-hero__img-container{
   position: relative;
   width: 50%;
   padding-right: 5rem;
 }
 
-.prod-hero__img{
+.product-hero__img{
   max-width: 100%;
 }
 
-.prod-hero__gradient{
+.product-hero__gradient{
   right: 0px;
   top: 0px;
 }
 
-.prod-features{
+.product-features{
   background: rgba(255, 255, 255, 0.59);
   position: relative;
   margin-top: 5rem;
@@ -1155,7 +1155,7 @@ body{
   padding-top: 5rem
 }
 
-.prod-features__title{
+.product-features__title{
   margin-left: auto;
   margin-right: auto;
   max-width: 48rem;
@@ -1165,7 +1165,7 @@ body{
   line-height: 120%;
 }
 
-.prod-features::before{
+.product-features::before{
   content: '';
   position: absolute;
   width: 100%;
@@ -1176,7 +1176,7 @@ body{
   filter: blur(350px);
 }
 
-.prod-features__items{
+.product-features__items{
   margin-top: 1.25rem;
   display: grid;
   width: 91.666667%;
@@ -1186,6 +1186,13 @@ body{
   --tw-bg-opacity: 1;
   background-color: rgb(239 246 255 / var(--tw-bg-opacity));
   padding: 5rem;
+}
+
+.product-features__title{
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  line-height: 120%;
 }
 
 .insights{
@@ -1198,6 +1205,8 @@ body{
 }
 
 .insights__content{
+  position: relative;
+  z-index: 10;
   display: grid;
   grid-template-columns: 1fr 45%;
   align-items: center;
@@ -1221,6 +1230,13 @@ body{
 
 .insights__img{
   max-width: 466px;
+}
+
+.insights__background{
+  position: absolute;
+  right: 0px;
+  top: -20rem;
+  z-index: 0;
 }
 
 .pricing-hero{
@@ -1384,24 +1400,8 @@ body{
   justify-content: center;
 }
 
-.absolute{
-  position: absolute;
-}
-
 .relative{
   position: relative;
-}
-
-.right-0{
-  right: 0px;
-}
-
-.-top-80{
-  top: -20rem;
-}
-
-.z-0{
-  z-index: 0;
 }
 
 .z-10{
@@ -1410,10 +1410,6 @@ body{
 
 .mt-8{
   margin-top: 2rem;
-}
-
-.flex{
-  display: flex;
 }
 
 .grid{
@@ -1432,19 +1428,10 @@ body{
   align-items: center;
 }
 
-.justify-between{
-  justify-content: space-between;
-}
-
 .gap-20{
   gap: 5rem;
 }
 
 .p-20{
   padding: 5rem;
-}
-
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
