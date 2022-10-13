@@ -634,7 +634,9 @@ body{
   padding-bottom: 1.25rem;
 }
 
-.qualities__main-title{
+.qualities__main-title,  .product-features__main-title{
+  margin-left: auto;
+  margin-right: auto;
   max-width: 36rem;
   text-align: center;
   font-size: 3rem;
@@ -1141,6 +1143,10 @@ body{
 .product-hero__gradient{
   right: 0px;
   top: 0px;
+}
+
+.product-hero__title,  .product-hero__subtitle{
+  text-align: left;
 }
 
 .product-features{

@@ -44,8 +44,8 @@
     .qualities{
         @apply px-20 py-5 flex flex-col items-center gap-10
     }
-    .qualities__main-title{
-        @apply text-5xl font-bold text-center max-w-xl leading-[120%]
+    .qualities__main-title, .product-features__main-title{
+        @apply text-5xl font-bold text-center max-w-xl leading-[120%] mx-auto
     }
     .qualities__items{
         @apply grid grid-cols-3 bg-lightblue p-16 gap-8 rounded-xl mt-5
@@ -253,6 +253,9 @@
     }
     .product-hero__gradient{
         @apply right-0 top-0
+    }
+    .product-hero__title, .product-hero__subtitle{
+        @apply text-left
     }
     .product-features{
         @apply mt-20 relative overflow-hidden pt-20 flex flex-col gap-10 bg-gray-100 bg-opacity-30 before:content-[''] before:absolute before:w-full before:h-[400px] before:left-0 before:-z-10 before:bg-features-gradient before:blur-[350px]
